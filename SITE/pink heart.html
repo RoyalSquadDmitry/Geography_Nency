@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pink heart.css" />
+    <title>Pink heart</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: 'Arial', sans-serif; /* Шрифт для всего текста */
+        }
+        h1 {
+            margin-top: -50px; /* Установите отрицательный отступ, чтобы поднять текст выше */
+            max-width: 90%; /* Ограничиваем ширину текста */
+            overflow-wrap: break-word; /* Позволяет переносить длинные слова */
+            word-wrap: break-word; /* Для совместимости с более старыми браузерами */
+            color: #ff69b4; /* Цвет текста (розовый) */
+            font-size: 30px; /* Размер шрифта */
+            text-shadow: 2px 2px 4px palevioletred; /* Тень текста для эффекта */
+            transition: transform 0.3s; /* Плавный переход для эффекта наведения */
+        }
+        h1:hover {
+            transform: scale(1.05); /* Увеличение текста при наведении */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="pinkboard"></canvas>
+    <script src="pink heart.js"></script>
+    
+    <script>
+        // Получаем параметры из URL
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+
+        // Создаем элемент для отображения имени
+        const nameElement = document.createElement('h1');
+        nameElement.textContent = `С днём влюбленных, ${name}!`;
+        document.body.appendChild(nameElement);
+    </script>
+</body>
+</html>

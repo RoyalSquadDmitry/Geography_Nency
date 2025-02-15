@@ -1,0 +1,116 @@
+html,
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  justify-content: center; /* Центрирование по вертикали */
+  height: 100vh; /* Высота на весь экран */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Files/6273448762.jpg'); /* Градиент + изображение */
+  background-size: cover; /* Изображение будет растянуто на весь экран */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Изображение не будет повторяться */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: palevioletred; /* Полупрозрачный цвет заголовка */
+    color: #000000; /* Черный текст */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 150px; /* Ширина изображения */
+    height: 150px; /* Высота изображения для круглой формы */
+    border-radius: 50%; /* Круглая форма изображения */
+    transition: transform 0.3s; /* Плавный переход для трансформации */
+}
+
+header img:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон для формы */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Светлая тень для формы */
+    text-align: center; /* Центрирование текста в форме */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование элементов формы */
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: palevioletred; /* Цвет метки */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid palevioletred; /* Рамка поля ввода */
+    border-radius: 5px;
+    width: 80%; /* Ширина поля ввода */
+    margin-bottom: 20px;
+    background-color: #333333; /* Темно-серый фон для поля ввода */
+    color: palevioletred; /* Цвет текста в поле ввода */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: palevioletred; /* Цвет кнопки */
+    color: #000000; /* Черный текст */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+button:hover {
+    background-color: rgb(211, 32, 92); /* Цвет кнопки при наведении */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: palevioletred; /* Цвет текста в подвале */
+}
+
+footer {
+    margin-top: 40px; /* Увеличен отступ сверху */
+    text-align: center;
+    font-size: 1.2em; /* Увеличен размер шрифта в подвале */
+    color: palevioletred; /* Цвет текста в подвале */
+}
+
+.footer-image {
+    width: 100px; /* Увеличена ширина изображения */
+    height: 100px; /* Увеличена высота изображения */
+    border-radius: 50%; /* Круглая форма изображения */
+    transition: transform 0.3s; /* Плавный переход для трансформации */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.footer-image:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
