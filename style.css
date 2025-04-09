@@ -229,3 +229,25 @@ footer p {
     transition: text-shadow 0.3s; /* Плавный переход для обводки */
 
 }
+
+.photo-gallery {
+    display: grid; /* Используем сетку для размещения изображений */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Автоматическая настройка колонок */
+    gap: 20px; /* Отступы между изображениями */
+    padding: 20px; /* Отступы внутри секции */
+    background-color: #ffffff; /* Белый фон для секции */
+    border-radius: 10px; /* Округление углов */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для секции */
+}
+
+.photo-gallery img {
+    width: 100%; /* Ширина изображения 100% от родительского контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 10px; /* Округление углов изображений */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход для трансформации и тени */
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+}
