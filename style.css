@@ -229,14 +229,3 @@ footer p {
     transition: text-shadow 0.3s; /* Плавный переход для обводки */
 
 }
-
-.carousel {
-    width: 440px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.carousel > img {
-scroll-snap-align: center;
-}
