@@ -102,15 +102,3 @@ img {
     border-radius: 5px; /* Добавляем немного округления углов для эстетики */
     margin: 20px 0; /* Добавляем отступы сверху и снизу */
 }
-
-footer p {
-    color: #fff; /* Цвет текста */
-    text-shadow: 
-        -1px -1px 0 black,  
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black; /* Черная обводка текста */
-    margin: 0; /* Убираем отступы */
-    padding: 10px; /* Добавляем отступы для лучшего восприятия */
-    transition: text-shadow 0.3s; /* Плавный переход для обводки */
-}
