@@ -240,7 +240,7 @@ footer p {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для секции */
 }
 
-.photo-gallery h4 {
+h4 {
     text-align: center; /* Центрирование текста */
     color: #ff6a00; /* Цвет текста */
     margin-bottom: 20px; /* Отступ снизу */
@@ -252,6 +252,7 @@ footer p {
     border-radius: 10px; /* Округление углов изображений */
     transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход для трансформации и тени */
 }
+
 
 .photo-gallery img:hover {
     transform: scale(1.05); /* Увеличение изображения при наведении */
