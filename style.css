@@ -114,11 +114,3 @@ footer p {
     padding: 10px; /* Добавляем отступы для лучшего восприятия */
     transition: text-shadow 0.3s; /* Плавный переход для обводки */
 }
-
-footer p:hover {
-    text-shadow: 
-        -1px -1px 0 white,  
-         1px -1px 0 white,
-        -1px  1px 0 white,
-         1px  1px 0 white; /* Белая обводка текста при наведении */
-}
